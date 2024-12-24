@@ -1,0 +1,21 @@
+.cell {
+    display:table-cell;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    width: 30px; height: 30px;
+}
+.row {
+    display:table-row;
+    clear: both;
+    overflow: hidden;
+}
+.table {
+    display:table;
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+    display:table;
+}
+#message {
+    font-size: 50px;
+}
