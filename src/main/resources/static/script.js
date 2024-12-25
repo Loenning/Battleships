@@ -1,10 +1,9 @@
 
 //------ Creating the game board
 
-var createGrid=function(x,y){
+var createGrid=function(x,y, container){
     var arrY = new Array(),
-        arrX,
-        container = $(".table");
+        arrX;
     for(var iy=0; iy<y; iy++){
         arrX = new Array();
         for(var ix=0; ix<x; ix++){
@@ -15,7 +14,8 @@ var createGrid=function(x,y){
     container.append(arrY.join("\r\n"));
 };
 // call function
-createGrid(10,10);
+createGrid(10,10, $(".tablePlayer1"));
+createGrid(10,10, $(".tablePlayer2"));
 
 
 
