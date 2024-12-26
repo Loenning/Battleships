@@ -9,24 +9,40 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1> Battleships </h1>
+<h1> Battleships </h1>
+<div class="container">
+    <div class="left-column">
+        <button type="button" onclick="resetGame()">
+            Start game
+        </button>
+        <br>
+        <br>
+        <button type="button" onclick="resetGame()">
+            Reset game
+        </button>
+    </div>
+    <div class="game-board">
+        <script>
+            const tablePlayer1 = document.getElementById('tablePlayer1');
+            const tablePlayer2 = document.getElementById('tablePlayer2');
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            const player1Grid = createGrid(10, 10, tablePlayer1);
+            const player2Grid = createGrid(10, 10, tablePlayer2);
+        </script>
         <div class="tablePlayer1"></div>
         <br>
         <br>
         <div class="tablePlayer2"></div>
         <script type="text/javascript" src="script.js"></script>
+    </div>
+
+    <div class="right-column">
+        <div type="text" id="message"></div>
+    </div>
 
 
-        <button type="button" onclick="resetGame()">
-            Reset game
-        </button>
+</div>
 
-        <br>
-        <br>
-
-        <div type="text" id="message">X's turn</div>
 
 </body>
 </html>

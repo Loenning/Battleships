@@ -24,9 +24,30 @@ body {
     display:table;
     border-left: 1px solid #000000;
     border-top: 1px solid #000000;
+    align-content: center;
     display:table;
 }
 #message {
     font-size: 50px;
     text-align: center;
+}
+
+.container {
+    display: flex;
+    width: 80%; /* Adjust width as needed */
+    align-content: center;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.game-board {
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-column {
+    flex: 1;
 }
